@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invictus Idiomas - Aprenda Inglês de Forma Eficaz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=40&width=120" alt="Invictus Idiomas" class="logo-img">
+                </div>
+                <nav class="nav">
+                    <a href="#cursos" class="nav-link">Cursos</a>
+                    <a href="#metodologia" class="nav-link">Metodologia</a>
+                    <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Domine o <span class="highlight">Inglês</span> em 
+                        <span class="highlight">6 Meses</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Método exclusivo que já transformou a vida de mais de 10.000 alunos. 
+                        Aprenda inglês de forma prática e eficiente com nossa metodologia comprovada.
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Aulas 100% práticas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professores nativos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificação internacional</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="btn-primary" onclick="scrollToForm()">
+                            Quero Começar Agora
+                        </button>
+                        <div class="urgency">
+                            <i class="fas fa-clock"></i>
+                            <span>Últimas vagas disponíveis!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/placeholder.svg?height=500&width=600" alt="Estudante aprendendo inglês" class="hero-img">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5 estrelas</span>
+                            <small>+2.500 avaliações</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="contato">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2 class="form-title">Garanta Sua Vaga Agora</h2>
+                    <p class="form-subtitle">Preencha o formulário e receba mais informações sobre nossos cursos</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nome Completo</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="level" class="form-label">Nível de Inglês</label>
+                        <select id="level" name="level" class="form-select" required>
+                            <option value="">Selecione seu nível</option>
+                            <option value="iniciante">Iniciante</option>
+                            <option value="basico">Básico</option>
+                            <option value="intermediario">Intermediário</option>
+                            <option value="avancado">Avançado</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Quero Receber Informações
+                    </button>
+                    <div class="form-security">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Seus dados estão seguros conosco</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher a Invictus?</h2>
+                <p class="section-subtitle">Descubra os diferenciais que fazem da Invictus a melhor escolha</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="benefit-title">Metodologia Exclusiva</h3>
+                    <p class="benefit-description">
+                        Método desenvolvido especialmente para brasileiros, focado na conversação desde o primeiro dia.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="benefit-title">Professores Qualificados</h3>
+                    <p class="benefit-description">
+                        Equipe de professores nativos e bilíngues com certificação internacional e experiência comprovada.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="benefit-title">Horários Flexíveis</h3>
+                    <p class="benefit-description">
+                        Aulas presenciais e online com horários que se adaptam à sua rotina, inclusive aos finais de semana.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="benefit-title">Certificação Internacional</h3>
+                    <p class="benefit-description">
+                        Certificado reconhecido mundialmente que abre portas no mercado de trabalho e universidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos alunos dizem</h2>
+                <p class="section-subtitle">Histórias reais de transformação</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Em 6 meses consegui a promoção que tanto queria! O método da Invictus realmente funciona. 
+                            Hoje me comunico com confiança em inglês no trabalho."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=50&width=50" alt="Maria Silva" class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Maria Silva</h4>
+                                <span class="author-role">Gerente de Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Sempre tive dificuldade com inglês, mas na Invictus tudo mudou. Os professores são incríveis 
+                            e o método é muito eficiente. Recomendo para todos!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=50&width=50" alt="João Santos" class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">João Santos</h4>
+                                <span class="author-role">Engenheiro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Consegui passar no TOEFL e realizar meu sonho de estudar no exterior. 
+                            A Invictus me preparou perfeitamente para esse desafio!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=50&width=50" alt="Ana Costa" class="author-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Ana Costa</h4>
+                                <span class="author-role">Estudante</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Não perca mais tempo!</h2>
+                <p class="cta-subtitle">
+                    Comece hoje mesmo sua jornada rumo à fluência em inglês. 
+                    Vagas limitadas para a próxima turma.
+                </p>
+                <button class="btn-cta" onclick="scrollToForm()">
+                    Garantir Minha Vaga Agora
+                </button>
+                <div class="cta-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Garantia de 30 dias ou seu dinheiro de volta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="/placeholder.svg?height=40&width=120" alt="Invictus Idiomas" class="footer-logo">
+                    <p class="footer-description">
+                        Transformando vidas através do ensino de idiomas há mais de 10 anos.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 9999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@invictusidiomas.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="#" class="footer-link">Cursos</a></li>
+                        <li><a href="#" class="footer-link">Metodologia</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Invictus Idiomas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header" id="chatHeader">
+            <div class="chat-avatar">
+                <img src="/placeholder.svg?height=40&width=40" alt="Atendente" class="avatar-img">
+                <div class="status-indicator"></div>
+            </div>
+            <div class="chat-info">
+                <h4 class="chat-name">Suporte Invictus</h4>
+                <span class="chat-status">Online agora</span>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Olá! 👋 Como posso te ajudar hoje?
+                    </div>
+                    <div class="message-time">Agora</div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Digite sua mensagem...">
+                <button class="chat-send" id="chatSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Button -->
+    <button class="chat-button" id="chatButton">
+        <i class="fas fa-comments"></i>
+        <div class="chat-notification">1</div>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
